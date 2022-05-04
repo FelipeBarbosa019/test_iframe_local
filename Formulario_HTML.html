@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário</title>
+    </head>
+    <body>
+        <form action="/action_page.php">
+            
+            <fieldset>
+                <legend><h4>Dados pessoais:</h4></legend>
+                <label for="name"><strong>Nome completo:</strong></label> 
+                <input type="text" name="name" id="name" required > <br><br>
+
+                <label for="email"><strong>E-mail:</strong></label> 
+                <input type="email" name="email" id="email" required> <br><br>
+
+                <strong>Data de nascimento: </strong>
+                <input type="date" required> <br><br>
+
+                <strong>Sexo:</strong><br>
+                <input type="radio" name="sexo" value="M" id="masculino" required> <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" value="F" id="feminino"> <label for="feminino"> Feminino </label>
+                <input type="radio" name="sexo" value="O" id="outro"> <label for="outro">Outro</label><br><br>
+
+            </fieldset>
+
+            <fieldset>
+                <legend><h4>Experiência em programação:</h4></legend>
+                <strong>Qual área da programação mais te agrada ?</strong> <br>
+                <input type="radio" name="area" value="Front" id="front" required> <label for="front">Front-end</label>
+                <input type="radio" name="area" value="Back" id="back"> <label for="back">Back-end</label>
+                <input type="radio" name="area" value="Full" id="full"> <label for="full">Fullstack</label> 
+                <input type="radio" name="area" value="ns" id="ns"> <label for="ns">Ainda não sei</label> <br><br>
+
+                <label for="senioridade"><strong>Senioridade</strong></label>
+                <select id="senioridade" required>
+                    <option selected disabled value="">Selecione</option>
+                    <option>Júnior</option>
+                    <option>Pleno</option>
+                    <option>Sênior</option>
+                </select><br><br>
+
+                <strong>Em quais linguanges você já programou ? </strong> <br>
+                <input type="checkbox" name="HTML" value="HTML" id="HTML"> <label for="HTML">HTML</label>
+                <input type="checkbox" name="2" value="CSS" id="CSS"> <label for="CSS">CSS</label>
+                <input type="checkbox" name="tecnologia3" value="JavaScript" id="JAVA"> <label for="JAVA">JavaScript</label>
+                <input type="checkbox" name="tecnologia4" value="PHP" id="PHP"> <label for="PHP">PHP</label>
+                <input type="checkbox" name="tecnologia5" value="C#" id="C"> <label for="C">C</label>
+                <input type="checkbox" name="tecnologia6" value="Python" id="PYTHON"> <label for="PYTHON">Python</label> <br><br>
+
+                <strong>Qual o nível de programação que você considera que possui ?</strong><br>
+
+                <datalist id="marcas">
+                    <option value="0" label="0%">
+                    <option value="10">
+                    <option value="20">
+                    <option value="30">
+                    <option value="40">
+                    <option value="50" label="50%">
+                    <option value="60">
+                    <option value="70">
+                    <option value="80">
+                    <option value="90">
+                    <option value="100" label="100%">
+                </datalist>
+                <input type="range" list="marcas">
+            </fieldset>
+            
+            <br>
+            <strong>Conte-nos sobre suas experiências na área, caso já tenha programado em outras linguagens fale sobre: <br> </strong>
+            <textarea rows="5" style="width: 30em" id="texto" name="texto"></textarea>
+           
+            <br>
+
+            <input type="reset" vaue="reset"><input type="submit"> <br><br>
+
+        </form>
+    </body>
+</html>
